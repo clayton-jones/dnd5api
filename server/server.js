@@ -27,6 +27,8 @@ app.set('views', './server/views');
 
 
 app.get('/', routes.homePage);
+app.get('/classes', routes.getClasses);
+app.get('/classes/:class', routes.getOneClass);
 
 
 

@@ -3,7 +3,7 @@
     "name": "Barbarian",
     "hit_points": {
       "hit_dice": 12,
-      "hit_points_1st_level": "12 + Constitution",
+      "hit_points_1st_level": "12 + Constitution modifier",
       "hit_points_after_1st": "1d12 (or 7) + Constitution modifier per Barbarian level after 1"
     },
     "proficiencies": {
@@ -68,7 +68,7 @@
     "name": "Bard",
     "hit_points": {
       "hit_dice": 8,
-      "hit_points_1st_level": "8 + Constitution",
+      "hit_points_1st_level": "8 + Constitution modifier",
       "hit_points_after_1st": "1d8 (or 5) + Constitution modifier per Bard level after 1"
     },
     "proficiencies": {
@@ -150,7 +150,104 @@
     ]
   },
   {
-    "name": "Cleric"
+    "name": "Cleric",
+    "hit_points": {
+      "hit_dice": 8,
+      "hit_points_1st_level": "8 + Constitution modifier",
+      "hit_points_after_1st": "1d8 (or 5) + Constitution modifier per Cleric level after 1"
+    },
+    "proficiencies": {
+      "armor": ["light armor", "medium armor", "shields"],
+      "weapons": ["simple weapons"],
+      "tools": [],
+      "saving_throws": ["wisdom", "charisma"],
+      "skills": {
+        "choose": 2,
+        "from": ["history", "insight", "medicine", "persuasion", "religion"]
+      }
+    },
+    "equipment": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "mace",
+            "options": [],
+            "amount": 1
+          }, 
+          {
+            "name": "warhammer (if proficient)",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "scale mail",
+            "options": [],
+            "amount": 1
+          }, 
+          {
+            "name": "leather armor",
+            "options": [],
+            "amount": 1
+          }, 
+          {
+            "name": "chain mail (if proficient)",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "light crossbow and 20 bolts",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "simple weapon",
+            "options": ["club", "dagger", "greatclub", "handaxe", "javelin", "light hammer", "mace", "quarterstaff", "sickle", "spear", "light crossbow", "dart", "shortbow", "sling"],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "priest's pack",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "explorer's pack",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": "all",
+        "from": [
+          {
+            "name": "shield",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "holy symbol",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Druid"

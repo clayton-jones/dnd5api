@@ -2,40 +2,152 @@
   {
     "name": "Barbarian",
     "hit_points": {
-      "hit_dice": "1d12",
-      "hit_points_1st_level": "12 + constitution",
-      "hit_points_higher_levels": "1d12 (or 7) + Constitution modifier per Barbarian level after 1"
+      "hit_dice": 12,
+      "hit_points_1st_level": "12 + Constitution",
+      "hit_points_after_1st": "1d12 (or 7) + Constitution modifier per Barbarian level after 1"
     },
     "proficiencies": {
-      "armor": [
-        {
-          "name": "light armor"
-        }, 
-        {
-          "name": "medium armor"
-        }, 
-        {
-          "name": "shields"
-        }
-      ],
-      "weapons": [
-        {
-          "name": "simple weapons"
-        }, 
-        {
-          "name": "martial weapons"
-        }
-      ],
+      "armor": ["light armor", "medium armor", "shields"],
+      "weapons": ["simple weapons", "martial weapons"],
       "tools": [],
       "saving_throws": ["strength", "constitution"],
       "skills": {
-        "choose": "3",
+        "choose": 2,
         "from": ["animal handling", "athletics", "intimidation", "nature", "perception", "survival"]
       }
-    }
+    },
+    "equipment": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "greataxe",
+            "options": [],
+            "amount": 1
+          }, 
+          {
+            "name": "martial melee weapon",
+            "options": ["battleaxe", "flail", "glaive", "greataxe", "greatsword", "halberd", "lance", "longsword", "maul", "morningstar", "pike", "rapier", "scimitar", "shortsword", "trident", "war pick", "warhammer", "whip"],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "handaxe",
+            "options": [],
+            "amount": 2
+          }, 
+          {
+            "name": "simple weapon",
+            "options": ["club", "dagger", "greatclub", "handaxe", "javelin", "light hammer", "mace", "quarterstaff", "sickle", "spear", "light crossbow", "dart", "shortbow", "sling"],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": "all",
+        "from": [
+          {
+            "name": "explorer's pack",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "javelin",
+            "options": [],
+            "amount": 4
+          }
+        ]
+      }
+    ]
   },
   {
-    "name": "Bard"
+    "name": "Bard",
+    "hit_points": {
+      "hit_dice": 8,
+      "hit_points_1st_level": "8 + Constitution",
+      "hit_points_after_1st": "1d8 (or 5) + Constitution modifier per Bard level after 1"
+    },
+    "proficiencies": {
+      "armor": ["light armor"],
+      "weapons": ["simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords"],
+      "tools": ["three musical instruments of your choice"],
+      "saving_throws": ["dexterity", "charisma"],
+      "skills": {
+        "choose": 3,
+        "from": ["any"]
+      }
+    },
+    "equipment": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "rapier",
+            "options": [],
+            "amount": 1
+          }, 
+          {
+            "name": "longsword",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "simple weapon",
+            "options": ["club", "dagger", "greatclub", "handaxe", "javelin", "light hammer", "mace", "quarterstaff", "sickle", "spear", "light crossbow", "dart", "shortbow", "sling"],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "diplomat's pack",
+            "options": [],
+            "amount": 1
+          }, 
+          {
+            "name": "entertainer's pack",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "name": "lute",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "musical instrument",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "choose": "all",
+        "from": [
+          {
+            "name": "leather armor",
+            "options": [],
+            "amount": 1
+          },
+          {
+            "name": "dagger",
+            "options": [],
+            "amount": 1
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Cleric"
